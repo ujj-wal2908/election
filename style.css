@@ -1,0 +1,86 @@
+body {
+    background-color: #1a1a2e;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+#game-container {
+    position: relative;
+    border: 4px solid #53a8b6;
+    box-shadow: 0 0 20px #53a8b6;
+}
+
+#game-canvas {
+    background-color: #0f3460;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #e94560;
+    text-shadow: 4px 4px #000;
+}
+h2 {
+    font-size: 2.5rem;
+    color: #e94560;
+}
+.pitch {
+    font-size: 1rem;
+    max-width: 80%;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.instructions {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #53a8b6;
+    color: #1a1a2e;
+    border: 2px solid #fff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #e94560;
+    transform: scale(1.05);
+}
+
+#score-display {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}

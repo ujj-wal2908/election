@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Runner | Ujjwal Sharma for RC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="400"></canvas>
+        
+        <div id="start-screen" class="overlay">
+            <h1>RC RUNNER</h1>
+            <p>Help Ujjwal deliver his promises!</p>
+            <p class="instructions">Press <strong>SPACE</strong> to Jump</p>
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <div id="game-over-screen" class="overlay hidden">
+            <h2>Game Over</h2>
+            <p>You collected <span id="final-score">0</span> promises!</p>
+            <p class="pitch">Help me turn these promises into reality for our region.</p>
+            <button id="vote-button" onclick="window.open('https://ujj-wal2908.github.io/manifesto', '_blank')">
+                Vote Ujjwal Sharma for RC!
+            </button>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    
+    <div id="score-display">Promises: 0</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
